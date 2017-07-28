@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Please input your command.");
+		Scanner scan = new Scanner(System.in);
+		Counter c = new Counter();
+		String command = scan.next();
+		
+		while(c.open){
+			
+		}
+	}
+	
+
+}

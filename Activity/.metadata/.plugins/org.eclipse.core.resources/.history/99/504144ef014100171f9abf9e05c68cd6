@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Counter {
+	
+	static Boolean open = true;
+	static String Command;
+	
+	public void parseCommand(String s){
+		
+	}
+	
+	
+	public static void close(){
+		open = false;
+		System.out.println("Done.");
+	}
+}

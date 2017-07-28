@@ -1,0 +1,16 @@
+package mydefault;
+import static mydefault.Expression.*;
+
+public class DemoExpression {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Mappings m = new Mappings();
+		String exp1 = "5 * 5 + 1";
+		ExpTokenizer tok = new ExpTokenizer(exp1);
+		Expression e = Expression.parseExp(tok);
+		System.out.println(e.show() + " => " + e.evaculate(m));
+		
+	}
+
+}

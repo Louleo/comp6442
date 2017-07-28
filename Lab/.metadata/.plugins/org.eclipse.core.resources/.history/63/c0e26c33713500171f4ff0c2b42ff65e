@@ -1,0 +1,5 @@
+package mydefault;
+
+public abstract class Tokenizer {
+
+}

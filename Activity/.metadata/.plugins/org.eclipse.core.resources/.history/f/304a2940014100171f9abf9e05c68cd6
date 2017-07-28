@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Counter {
+	
+	static Boolean quitsignal = true;
+	static String Command;
+	
+	
+	
+	public static void quit(){
+		quitsignal = false;
+		System.out.println("Done.");
+	}
+}

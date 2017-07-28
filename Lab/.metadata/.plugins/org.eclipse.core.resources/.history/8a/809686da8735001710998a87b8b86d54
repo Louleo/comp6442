@@ -1,0 +1,81 @@
+package mydefault;
+
+public abstract class Expression {
+	static Expression exp1;
+	static Expression exp2;
+	static Expression current;
+	public static Expression add(Expression l, Expression r){
+		return  SimpleFactory.createAdd(l, r);
+	}
+	public static Expression lit(int b){
+		return SimpleFactory.createLit(b);
+	}
+	public static Expression mult(Expression l, Expression r){
+		return  SimpleFactory.createMulti(l, r);
+	}
+	public static Expression subt(Expression l, Expression r){
+		return  SimpleFactory.createSubt(l, r);
+	}
+	public static Expression div(Expression l, Expression r){
+		return  SimpleFactory.createDivd(l, r);
+	}
+	public static Expression var(String b){
+		return SimpleFactory.createVar(b);
+	}
+		public abstract String show();
+		
+		public abstract int evaculate(Mappings m);
+		
+		public abstract int size();
+		
+		public abstract int height();
+		
+		public abstract int operators();
+		
+		public abstract Expression simplify(Mappings m);
+		
+		public static Expression parseExp(Tokenizer tok) {
+			System.out.println("re");
+			
+			if (tok.current() instanceof Integer) {
+				exp1 = new LitExp((int)tok.current()); 
+				tok.next();
+				System.out.println(tok.current());
+				return exp1;
+			} else if (tok.current().equals("+")) {
+				tok.next(); 
+				exp2 = new LitExp((int)tok.current());
+				Expression exp= new AddExp(exp1,exp2);
+				System.out.println(exp.show());
+				exp1 = exp;
+				tok.next();
+				return exp1;
+			} else if(tok.current().equals("-")){
+				tok.next(); 
+				exp2 = new LitExp((int)tok.current());
+				Expression exp= new SubtExp(exp1,exp2);
+				exp1 = exp;
+				tok.next();
+				return exp1;
+			}else if(tok.current().equals("*")){
+				tok.next();
+				exp2 = new LitExp((int)tok.current());
+				Expression exp= new MultiExp(exp1,exp2);
+				System.out.println(exp.show());
+				exp1 = exp;
+				tok.next();
+				return exp1;
+			}else if(tok.current().equals("/")){
+				tok.next(); 
+				exp2 = new LitExp((int)tok.current());
+				Expression exp= new DivdExp(exp1,exp2);
+				exp1 = exp;
+				tok.next();
+				return exp1;
+			}else if(tok.current().equals("\n")){
+				return null;
+			}
+			throw new Error();
+		}
+		
+}

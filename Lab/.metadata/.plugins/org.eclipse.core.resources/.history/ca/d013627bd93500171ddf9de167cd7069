@@ -1,0 +1,25 @@
+package mydefault;
+import static mydefault.Expression.*;
+
+public class DemoExpression {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Mappings m = new Mappings();
+		String exp1 = "((((3+3)*2)/3)-2)";
+		Tokenizer tok = new ExpTokenizer(exp1);
+		Expression e = parseExp(tok);
+		System.out.println(e.show()+ " => " + e.evaculate(m));
+	}
+	
+	private static void checktok(Tokenizer tok, Object expected) {
+		if (tok.current() != null && tok.current().equals(expected)) {
+			System.out.println("ok " + expected + " as expected." );
+		} else {
+			System.out.println("Problem!!!!! Expected " + expected + " but was " + tok.current());
+		}
+		tok.next();
+	}
+
+
+}

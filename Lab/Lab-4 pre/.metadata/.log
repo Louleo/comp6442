@@ -1,0 +1,342 @@
+!SESSION 2017-05-10 19:21:56.820 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -keyring /Users/Louleo/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -data /Users/Louleo/Desktop/COMP6442/Lab-4 pre -product org.eclipse.epp.package.java.product -keyring /Users/Louleo/.eclipse_keyring
+
+!ENTRY org.eclipse.cdt.codan.checkers.ui 4 0 2017-05-10 19:21:58.744
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.codan.checkers.ui [658]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.codan.ui.cxx
+    -> Bundle-SymbolicName: org.eclipse.cdt.codan.ui.cxx; bundle-version="3.3.0.201704050430"; singleton:="true"
+       org.eclipse.cdt.codan.ui.cxx [662]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.codan.ui
+           -> Bundle-SymbolicName: org.eclipse.cdt.codan.ui; bundle-version="3.2.0.201704050430"; singleton:="true"
+              org.eclipse.cdt.codan.ui [661]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.ui
+                  -> Bundle-SymbolicName: org.eclipse.cdt.ui; bundle-version="6.1.0.201704050430"; singleton:="true"
+                     org.eclipse.cdt.ui [682]
+                       Unresolved requirement: Require-Bundle: org.eclipse.tools.templates.ui; bundle-version="1.1.0"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.ui
+           -> Bundle-SymbolicName: org.eclipse.cdt.ui; bundle-version="6.1.0.201704050430"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.ui
+    -> Bundle-SymbolicName: org.eclipse.cdt.ui; bundle-version="6.1.0.201704050430"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.cdt.codan.ui 4 0 2017-05-10 19:21:58.746
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.codan.ui [661]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.ui
+    -> Bundle-SymbolicName: org.eclipse.cdt.ui; bundle-version="6.1.0.201704050430"; singleton:="true"
+       org.eclipse.cdt.ui [682]
+         Unresolved requirement: Require-Bundle: org.eclipse.tools.templates.ui; bundle-version="1.1.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.cdt.codan.ui.cxx 4 0 2017-05-10 19:21:58.747
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.codan.ui.cxx [662]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.codan.ui
+    -> Bundle-SymbolicName: org.eclipse.cdt.codan.ui; bundle-version="3.2.0.201704050430"; singleton:="true"
+       org.eclipse.cdt.codan.ui [661]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.ui
+           -> Bundle-SymbolicName: org.eclipse.cdt.ui; bundle-version="6.1.0.201704050430"; singleton:="true"
+              org.eclipse.cdt.ui [682]
+                Unresolved requirement: Require-Bundle: org.eclipse.tools.templates.ui; bundle-version="1.1.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.ui
+    -> Bundle-SymbolicName: org.eclipse.cdt.ui; bundle-version="6.1.0.201704050430"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.cdt.debug.core 4 0 2017-05-10 19:21:58.751
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.debug.core [666]
+  Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.cdt.debug.ui 4 0 2017-05-10 19:21:58.752
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.debug.ui [667]
+  Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.1.0.201704050430"; singleton:="true"
+       org.eclipse.cdt.debug.core [666]
+         Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.ui; bundle-version="[6.0.0,7.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.cdt.ui; bundle-version="6.1.0.201704050430"; singleton:="true"
+       org.eclipse.cdt.ui [682]
+         Unresolved requirement: Require-Bundle: org.eclipse.tools.templates.ui; bundle-version="1.1.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.cdt.dsf 4 0 2017-05-10 19:21:58.758
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.dsf [669]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.1.0.201704050430"; singleton:="true"
+       org.eclipse.cdt.debug.core [666]
+         Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 0 2017-05-10 19:21:58.765
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.dsf.gdb [670]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.1.0.201704050430"; singleton:="true"
+       org.eclipse.cdt.debug.core [666]
+         Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.0.201704050430"; singleton:="true"
+       org.eclipse.cdt.dsf [669]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.1.0.201704050430"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.cdt.dsf.gdb.ui 4 0 2017-05-10 19:21:58.773
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.dsf.gdb.ui [671]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.1.0.201704050430"; singleton:="true"
+       org.eclipse.cdt.debug.core [666]
+         Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.ui
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf.ui; bundle-version="2.5.0.201704050430"; singleton:="true"
+       org.eclipse.cdt.dsf.ui [672]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="6.0.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.1.0.201704050430"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf; bundle-version="2.0.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.0.201704050430"; singleton:="true"
+              org.eclipse.cdt.dsf [669]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.1.0.201704050430"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.0.201704050430"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.cdt.dsf.ui 4 0 2017-05-10 19:21:58.779
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.dsf.ui [672]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="6.0.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.1.0.201704050430"; singleton:="true"
+       org.eclipse.cdt.debug.core [666]
+         Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf; bundle-version="2.0.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.0.201704050430"; singleton:="true"
+       org.eclipse.cdt.dsf [669]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.1.0.201704050430"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.cdt.gdb.ui 4 0 2017-05-10 19:21:58.785
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.gdb.ui [674]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="7.0.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.1.0.201704050430"; singleton:="true"
+       org.eclipse.cdt.debug.ui [667]
+         Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.1.0.201704050430"; singleton:="true"
+              org.eclipse.cdt.debug.core [666]
+                Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.ui; bundle-version="[6.0.0,7.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.cdt.ui; bundle-version="6.1.0.201704050430"; singleton:="true"
+              org.eclipse.cdt.ui [682]
+                Unresolved requirement: Require-Bundle: org.eclipse.tools.templates.ui; bundle-version="1.1.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.cdt.launch 4 0 2017-05-10 19:21:58.792
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.launch [675]
+  Unresolved requirement: Require-Bundle: org.eclipse.launchbar.ui; bundle-version="2.1.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.ui; bundle-version="[6.0.0,7.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.cdt.ui; bundle-version="6.1.0.201704050430"; singleton:="true"
+       org.eclipse.cdt.ui [682]
+         Unresolved requirement: Require-Bundle: org.eclipse.tools.templates.ui; bundle-version="1.1.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.1.0.201704050430"; singleton:="true"
+       org.eclipse.cdt.debug.core [666]
+         Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="[7.0.0,9.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.1.0.201704050430"; singleton:="true"
+       org.eclipse.cdt.debug.ui [667]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.1.0.201704050430"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.cdt.make.ui 4 0 2017-05-10 19:21:58.798
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.make.ui [677]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.ui; bundle-version="[6.0.0,7.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.cdt.ui; bundle-version="6.1.0.201704050430"; singleton:="true"
+       org.eclipse.cdt.ui [682]
+         Unresolved requirement: Require-Bundle: org.eclipse.tools.templates.ui; bundle-version="1.1.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.cdt.managedbuilder.ui 4 0 2017-05-10 19:21:58.806
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.managedbuilder.ui [680]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.ui; bundle-version="[6.0.0,7.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.cdt.ui; bundle-version="6.1.0.201704050430"; singleton:="true"
+       org.eclipse.cdt.ui [682]
+         Unresolved requirement: Require-Bundle: org.eclipse.tools.templates.ui; bundle-version="1.1.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.make.ui
+    -> Bundle-SymbolicName: org.eclipse.cdt.make.ui; bundle-version="7.3.0.201704050430"; singleton:="true"
+       org.eclipse.cdt.make.ui [677]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.ui; bundle-version="[6.0.0,7.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.cdt.ui; bundle-version="6.1.0.201704050430"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.cdt.ui 4 0 2017-05-10 19:21:58.814
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.ui [682]
+  Unresolved requirement: Require-Bundle: org.eclipse.tools.templates.ui; bundle-version="1.1.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.core.net 1 0 2017-05-10 19:22:03.937
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2017-05-10 19:22:06.108
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-05-10 19:22:06.108
+!MESSAGE A conflict occurred for ALT+COMMAND+R:
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.python.pydev.debug.setnext,Set Next Statement,
+		,
+		Category(org.python.pydev.ui.category.run,PyDev - Run,Python run category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3545c913,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5d00e30e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)

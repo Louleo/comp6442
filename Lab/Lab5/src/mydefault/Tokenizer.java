@@ -1,0 +1,20 @@
+package mydefault;
+import java.io.IOException;
+import java.io.StreamTokenizer;
+import java.io.StringReader;
+
+public abstract class Tokenizer {
+	abstract boolean hasNext();
+
+	abstract Object current();
+	
+	abstract Object prev();
+
+	abstract void next();
+
+	public void parse(Object o)  {
+		if (current() == null || !current().equals(o))
+			throw new Error(); 
+		next();
+	}
+}

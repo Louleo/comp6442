@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class Counter {
+	
+	static int countvalue = 0;
+	static Boolean quitsignal = true;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Please input your command.");
+		Scanner scan = new Scanner(System.in);
+		String command = scan.next();
+		if(command.equals("q")){
+			quit();
+		}
+		while(quitsignal){
+			if (command.equals("i")){
+				increase();
+			}else if(command.equals("r")){
+				reset();
+			}else if(command.equals("q")){
+				quit();
+			}else{
+				System.out.println("Please input the valid command: i for increments, r for reset, q for exit.");
+			}
+			command = scan.next();
+		}
+	}
+	
+	public static void increase(){
+		countvalue = countvalue +1;
+		System.out.println(countvalue);
+	}
+	
+	public static void reset(){
+		countvalue = 0;
+		System.out.println(countvalue);
+
+	}
+	
+	public static void quit(){
+		quitsignal = false;
+		System.out.println("Done.");
+	}
+}

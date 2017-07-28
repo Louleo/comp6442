@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Counter {
+	
+	static Boolean open = true;
+	static String Command;
+	
+	public Value parseCommand(String s, Value v){
+		if(s.equals("i")){
+			v.increase();
+			return v;
+		}else if(s.equals("r")){
+			v.reset();
+			return v;
+		}else{
+			return null;
+		}
+
+	}
+	
+	
+	public static void close(){
+		open = false;
+		System.out.println("Done.");
+	}
+}
